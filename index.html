@@ -1,28 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>PiBoard</title>
-    <link rel="stylesheet" href="styles.css">
- 
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-    <div class="line"></div>
+  <body>
     <div class="container">
-        <div class="holder">
-            <h1 id='hours'>5</h1>
-            <h2 id='ampm'>PM</h2>
-        </div>
+      <div class="holder">
+        <h1 id="hours">5</h1>
+        <h2 id="ampm">PM</h2>
+      </div>
+      <div class="holder">
+        <h1 id="minutes">33</h1>
+      </div>
 
-        <div class="holder">
-            <h1 id='minutes'>33</h1>
+      <div class="stats">
+        <div class="box" id="weather">
+          <div
+            style="display: flex; flex-direction: row; justify-content: center"
+          >
+            <h2>Bayan Lepas</h2>
+            <div
+              style="
+                height: 2.75rem;
+                width: 2.75rem;
+                transform: translateY(0.5rem);
+              "
+            >
+              <img id="weather-icon" style="height: 50px; width: 50px" />
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div
+              style="font-size: 3.75rem; font-weight: 500"
+              id="weather-temp"
+            ></div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 3rem;
+              "
+            >
+              <div id="weather-main"></div>
+              <div style="margin-top: 0.25rem">
+                <span
+                  style="font-size: 0.875rem; font-weight: 300; color: gray"
+                  id="weather-feels-like"
+                ></span>
+              </div>
+              <div>
+                <span
+                  style="font-size: 0.875rem; font-weight: 300; color: gray"
+                  id="weather-highest"
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              gap: 25px;
+              justify-content: center;
+              margin-top: 1.5rem;
+            "
+          >
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div style="font-weight: 500; font-size: 0.875rem">Pressure</div>
+              <div
+                style="font-size: 0.875rem; color: gray"
+                id="weather-pressure"
+              ></div>
+            </div>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div style="font-weight: 500; font-size: 0.875rem">Humidity</div>
+              <div
+                style="font-size: 0.875rem; color: gray"
+                id="weather-humidity"
+              ></div>
+            </div>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div style="font-weight: 500; font-size: 0.875rem">
+                Wind Speed
+              </div>
+              <div
+                style="font-size: 0.875rem; color: gray"
+                id="weather-wind-speed"
+              ></div>
+            </div>
+          </div>
         </div>
+        <div class="box" id="spotify">
+          <img
+            src="https://spotify-github-profile.kittinanx.com/api/view?uid=31zjckvsv7dmthfeq5aij7dvaxpm&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false"
+          />
+        </div>
+      </div>
     </div>
-</body>
-<script type="text/javascript" src="script.js"></script>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>

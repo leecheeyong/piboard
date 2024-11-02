@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 :root {
   --background: black;
@@ -16,7 +16,7 @@
 
 .preview p:hover {
   background-color: rgba(179, 179, 179, 0.308);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 html,
@@ -43,8 +43,8 @@ body {
   display: flex;
   flex-direction: row;
   padding: 0 1% 0 1%;
-  transition: all .2s ease-out;
-  transform: scale(0.8)
+  transition: all 0.2s ease-out;
+  transform: scale(0.8);
 }
 
 .holder {
@@ -76,3 +76,21 @@ body {
   text-align: left;
 }
 
+.stats {
+  position: relative;
+  width: 100%;
+  margin: auto 5%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.box {
+  font-family: sans-serif;
+  width: 100%;
+  padding: 25px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  color: white;
+  background-color: #1f1f1f;
+}
