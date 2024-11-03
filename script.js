@@ -42,7 +42,7 @@ function updateWeather() {
     .then((r) => r.json())
     .then((q) => {
       document.getElementById("quote").textContent =
-        `"${q.content}" - ${q.author}`;
+        `"${q.content}"`;
     });
 }
 
