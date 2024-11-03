@@ -34,8 +34,9 @@ function defaultTimeZone() {
   }
 
   document.getElementById("ampm").innerHTML = am_pm;
-  updateWeather();
 }
+
+setInterval(updateWeather, 10000);
 
 function updateWeather() {
   fetch("https://leecheeyong.vercel.app/bayanlepasweather")

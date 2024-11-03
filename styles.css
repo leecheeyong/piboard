@@ -94,3 +94,13 @@ body {
   color: white;
   background-color: #1f1f1f;
 }
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
