@@ -4,7 +4,7 @@ function showTime() {
   let hour = time.getHours();
   let min = time.getMinutes();
 
-  hour = hour < 10 ? "" + hour : hour;
+  hour = hour < 10 ? "0" + hour : hour;
   min = min < 10 ? "0" + min : min;
   document.getElementById("hours").innerHTML = hour;
   document.getElementById("minutes").innerHTML = min;
