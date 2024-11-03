@@ -61,7 +61,15 @@ function updateWeather() {
       document.getElementById("weather-wind-speed").textContent =
         bayanLepas.wind.speed;
     });
-    document.getElementById("spotify").src = "https://spotify-github-profile.kittinanx.com/api/view?uid=31zjckvsv7dmthfeq5aij7dvaxpm&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false&timestamp="+new Date().getTime()
+  document.getElementById("spotify").src =
+    "https://spotify-github-profile.kittinanx.com/api/view?uid=31zjckvsv7dmthfeq5aij7dvaxpm&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false&timestamp=" +
+    new Date().getTime();
+  fetch("https://leecheeyong.vercel.app/quote")
+    .then((r) => r.json())
+    .then((q) => {
+      document.getElementById("quote").textContent =
+        `"${q.content}" - ${q.author}`;
+    });
 }
 
 updateWeather();
