@@ -63,7 +63,7 @@ body {
 }
 
 .quote {
-  transform: translateY(5rem);
+  transform: translateY(3rem);
   padding: 50px;
   padding-bottom: 0;
   padding-top: 0;
